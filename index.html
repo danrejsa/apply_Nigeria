@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home: Apply - Nigeria</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="view/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="view/css/modern-business.css" rel="stylesheet">
+    <link href="view/css/custom.css" rel="stylesheet">
+    <link href="view/css/hover.css" rel="stylesheet">
+    <link href="view/css/bootstrap-social.css" rel="stylesheet">
+    <link href="view/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="controller/js/jquery.js"></script>
+    <script src="controller/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function iframeLoaded() {
+          var iFrameID = document.getElementById('idIframe');
+          if(iFrameID) {
+                iFrameID.height = "280px";
+                iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+          }   
+      }
+</script>   
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="n*+avigation">
+        <div class="container">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Apply - Nigeria</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./admin" class="hvr-sign-in" style="color: #ffffff;">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('images/banner.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/banner-2.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/banner-3.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Search Bar -->
+        <div class="panel-default" style="padding-top: 40px; padding-bottom: 40px;">
+            <form action="model/sphider/search.php" method="get" target="iframe_matrix" onload="iframeLoaded()" scrolling="no" width="100%"> 
+            <input type="text" name="query" id="query" size="40"  placeholder='Type here to search.' action="include/js_suggest/suggest.php" columns="2" autocomplete="on" delay="1500">
+            <input type="hidden" name="search" value="1">
+            </form>
+        </div>
+
+        <!-- Matrix Section -->
+        <div id="content">
+        <iframe id="idIframe" onload="iframeLoaded()" scrolling="no" style="border: none;" width="100%" src="matrix.php" name="iframe_matrix"></iframe>
+        </div>
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="page-header">
+                    Sponsored Articles
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Our Core Values</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Apply - Nigeria is a platform designed to provide parents, guardians, and students accurate and detailed information about schools available within Nigeria. This includes their tutition fees, facilities offered, and performace to aid the selection process of parents</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i>Schools Academic Performance</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>The focus of the school performance was based on the number of students that sat and passed in major areas of Science and Arts, and are eligible for admission in any Nigerian university</p>
+                        <a href="Performances.html" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Find out the 10 top schools in Nigeria</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>These rankings were carried out based on the school performance (WAEC results) obtained from the examination body for the schools.</p>
+                        <a href="rankings.html" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header"></h2>
+            </div>
+            <div class="col-md-4">
+                <!-- this script got from www.htmlbestcodes.com-Coded by: Krishna Eydat -->
+
+<body>
+<center>
+<script language="javascript" type="text/javascript">
+var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+//  DECLARE AND INITIALIZE VARIABLES
+var Calendar = new Date();
+
+var year = Calendar.getFullYear();     // Returns year
+var month = Calendar.getMonth();    // Returns month (0-11)
+var today = Calendar.getDate();    // Returns day (1-31)
+var weekday = Calendar.getDay();    // Returns day (1-31)
+
+var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+var cal;    // Used for printing
+
+Calendar.setDate(1);    // Start the calendar day at '1'
+Calendar.setMonth(month);    // Start the calendar month at now
+
+
+/* VARIABLES FOR FORMATTING
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+      tags to customize your caledanr's look. */
+
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+
+/* BEGIN CODE FOR CALENDAR
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+tags to customize your calendar's look.*/
+
+cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+
+//   DO NOT EDIT BELOW THIS POINT  //
+
+// LOOPS FOR EACH DAY OF WEEK
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+
+// BOLD TODAY'S DAY OF WEEK
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+// PRINTS DAY
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+
+cal += TD_end + TR_end;
+cal += TR_start;
+
+// FILL IN BLANK GAPS UNTIL TODAY'S DAY
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+
+// LOOPS FOR EACH DAY IN CALENDAR
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  // RETURNS THE NEXT DAY TO PRINT
+  week_day =Calendar.getDay();
+
+  // START NEW ROW FOR FIRST DAY OF WEEK
+  if(week_day == 0)
+  cal += TR_start;
+
+  if(week_day != DAYS_OF_WEEK)
+  {
+
+  // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+  var day  = Calendar.getDate();
+
+  // HIGHLIGHT TODAY'S DATE
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+
+  // PRINTS DAY
+  else
+  cal += TD_start + day + TD_end;
+  }
+
+  // END ROW FOR LAST DAY OF WEEK
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+
+  // INCREMENTS UNTIL END OF THE MONTH
+  Calendar.setDate(Calendar.getDate()+1);
+
+}// end for loop
+
+cal += '</TD></TR></TABLE></TABLE>';
+
+//  PRINT CALENDAR
+document.write(cal);
+
+//  End -->
+</script>
+</center>
+<br/><div style="clear:both"></div><div><a target="_blank" href="http://www.htmlbestcodes.com/"><span style="font-size: 8pt; text-decoration: none"></span></a></div>
+</body>
+
+            </div>
+            <div class="col-md-4">
+            <video width="555" controls>
+  				Your browser does not support HTML5 video.
+			</video>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- Footer -->
+        <footer class="panel-footer">
+        <h2>Find us on</h2>
+        <a class="btn btn-social-icon btn-twitter">
+            <span class="fa fa-twitter"><img src="images/bootstrap-social.png"></span>
+        </a>
+        <a class="btn btn-social-icon btn-facebook">
+            <span class="fa fa-twitter"></span>
+        </a>
+        <a class="btn btn-social-icon btn-google">
+            <span class="fa fa-twitter"></span>
+        </a>
+        <a class="btn btn-social-icon btn-pinterest">
+            <span class="fa fa-twitter"></span>
+        </a>
+        <a class="btn btn-social-icon btn-linkedin">
+            <span class="fa fa-twitter"></span>
+        </a>
+        <div>
+            <div>
+                <nav class="collapse navbar-collapse">
+                <div class="nav navbar-nav">
+                    <small style="padding: 10px; margin-left: -25px;">
+                        <a href="contact.html" style="padding-right: 10px;">Contact us</a>
+                        <a href="privacy-policy.html" style="padding-right: 10px;">Privacy Policy</a>
+                        <a href="advertising.html" style="padding-right: 10px;">Advertising</a>
+                        <a href="terms-and-conditions.php">Terms and Conditions</a>
+                    </small>
+                </div>
+                </nav>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-12" style="padding-top: 20px";>
+                    <p>Copyright &copy; Apply - Nigeria 2017</p>
+                </div>
+            </div> 
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 6000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
